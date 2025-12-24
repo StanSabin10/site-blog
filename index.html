@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ro">
+<head>
+     <title>Portofoliu • Web Developer</title>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Fonts (optional). If you need 100% offline, remove these two lines and use system fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+        
+        <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#acasa">
+                <img src="images/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="navbar__links">
+                <a href="#acasa">Acasă</a>
+                <a href="#despre-mine">Despre mine</a>
+                <a href="#proiecte">Proiecte</a>
+                <a href="#contact">Contactează-mă</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="acasa">
+            <div class="hero">
+                <div class="hero__content">
+                    <h1 class="name">Salut,sunt Sabin,construiesc website-uri<span>moderne</span> si<span>rapide</span></h1>
+                    <p>Sunt un Web Developer din România.</p>
+                    <a href="#proiecte" class="btn--primary">Vezi proiectele mele</a>
+                </div>
+                <div class="hero__image">
+                    <img src="images/hero backgroun.jpg" alt="Hero Image" />
+                </div>
+            </div>
+        </section>
+        <section id="despre-mine">
+            <div class="about">
+                <div class="about__image">
+                    <img src="assets/images/about-image.png" alt="About Image" />
+                </div>
+                <div class="about__content">
+                    <h2>Despre mine</h2>
+                    <p>Sunt un Web Developer din România.</p>
+                    <p>Sunt student la Universitatea de Petrol si Gaz din Ploiesti(UPG).</p>
+                    <p>Sunt pasionat de a face proiecte web cat mai complexe si de a invata lucruri noi.</p>
+                </div>
+            </div>
+        </section>
+        <section id="proiecte">
+            <div class="projects">
+                <h2>Proiecte</h2>
+                <div class="projects__grid">
+                    <div class="project">
+                        <img src="assets/images/project-1.png" alt="Project 1" />
+                        <h3>Proiect 1</h3>
+                        <p>Descriere proiect 1</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/images/project-2.png" alt="Project 2" />
+                        <h3>Proiect 2</h3>
+                        <p>Descriere proiect 2</p>
+                    </div>
+                    <div class="project">
+                        <img src="assets/images/project-3.png" alt="Project 3" />
+                        <h3>Proiect 3</h3>
+                        <p>Descriere proiect 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <h2>Contact</h2>
+                <form>
+                    <div class="form__group">
+                        <label
+                            for="nume">Nume</label>
+                        <input type="text" id="nume" name="nume" required />
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form__group">
+                        <label for="mesaj">Mesaj</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Trimite Mesajul</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sarthik Bhat. Toate drepturile rezervate.</p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
