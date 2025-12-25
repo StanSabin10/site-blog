@@ -106,27 +106,46 @@ main {
     min-height: 100vh;
     display: grid;
     align-items: start;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: repeat(2, 1fr); /* maxim 2 coloane */
+    max-width: 100%;
     gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr; /* pe mobil/tabletă: 1 coloană */
+  }
 }
 
 .hero__image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 9.5rem;
+    padding-top: 12rem;
     flex: 1;
 }
 
 .hero__image img {
-    width: 100%;
-    max-width: 500px;
+    max-width: 750px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
     box-shadow:   
     20px 20px 60px rgba(0,0,0,0.10),
     -20px -20px 60px rgba(0,0,0,0.10);
+}
+
+/* Pe tablete și telefoane, imaginea se ajustează automat */
+@media (max-width: 1024px) { /* tabletă */
+    .hero__image img {
+        width: 80%; /* se micșorează pentru a nu depăși containerul */
+    }
+}
+
+@media (max-width: 600px) { /* telefon */
+    .hero__image img {
+        width: 100%; /* ocupă tot spațiul disponibil */
+    }
 }
 
 .hero__content {
